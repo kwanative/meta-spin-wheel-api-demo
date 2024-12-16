@@ -21,3 +21,27 @@ model m_level_point {
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now())
 }
+
+model users {
+  id          String    @id @default(uuid())
+  ip_address  String?   @unique
+  name        String?
+  point       Int?
+  character   Int?
+  gold_coin   Int?
+  energy      Int?
+  map         Int?
+  auto        Int?
+  x2_coin     Int?
+  bg_map      Int?
+  auto_s      Int?
+  auto_m      Int?
+  auto_l      Int?
+  power_s     Int?
+  power_m     Int?
+  power_l     Int?
+  bonus       Int?
+  level       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
