@@ -26,6 +26,7 @@ model users {
   id          String    @id @default(uuid())
   ip_address  String?   @unique
   name        String?
+  pic         String?
   point       Int?
   character   Int?
   gold_coin   Int?
