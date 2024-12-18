@@ -23,6 +23,8 @@ export class UsersService {
         data: {
           ip_address: ip,
           level: "Iron Start",
+          character: 1,
+          energy: 1000,
         },
       });
     }
